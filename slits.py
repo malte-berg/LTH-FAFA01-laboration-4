@@ -26,6 +26,8 @@ from_camera = from_camera[-8:] + from_camera[:-8]
 # Create the plot
 fig, ax = plt.subplots()
 ax.set_title('5 spalter')
+ax.set_ylabel('Relativ intensitet')
+ax.set_xlabel('Avstånd på skärmen (m)')
 ax.plot(x, total_diffraction, label='Förväntad diffraktion')
 ax.plot(x, from_camera, label='Från kamera')
 ax.set_xlim(-0.01, 0.01)
